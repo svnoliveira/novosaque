@@ -208,20 +208,32 @@ main {
 .home-extra {
     height: 50vh;
     background-image: linear-gradient(to bottom right, #00339B, #00B7EF);
+    margin: 30vh 0;
+    position: relative;
 }
 
 .home-extra > .container{
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 0 2rem;
+    height: 100%;
 }
+
 
 .home-extra > .container .font-44px,
 .home-extra > .container .font-20px {
     color: var(--color-grey);
+    max-width: 75%;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.product-showcase {
+    background-image: url(./img/blue-paint.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .product-showcase > .container {
@@ -230,13 +242,15 @@ main {
     height: 90vh;
 }
 
-.product-showcase > .container > .text-box .font-16px{
+.product-showcase > .container > .text-box .font-20px{
     color: var(--color-blue-light);
     margin-bottom: 3rem;
+    font-weight: 600;
 }
 
 .product-showcase > .container > .text-box .font-40px{
     font-weight: 600;
+    color: var(--color-grey);
 }
 
 .text-box {
@@ -255,6 +269,8 @@ main {
     align-self: center;
     object-fit: cover;
     border-radius: 1rem;
+    transform: rotate(1deg);
+    box-shadow: 44px 44px 1px 5px rgb(0 0 155 / 59%);
 }
 
 .product-list > .container{
@@ -267,13 +283,15 @@ main {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    max-width: 30%;
 }
 
 .product-list > .container > ul{
     margin: 5.6rem 0 2.4rem 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .product-list > .container > ul > li {
@@ -339,10 +357,11 @@ main {
     margin-top: 20rem;
     margin-bottom: 20rem;
     height: 90vh;
-    background-image: url(./img/businessmen-handshake.jpg);
+    background-image: url(./img/close-up-keyboard.jpg);
     background-repeat: no-repeat;
     background-size: 85rem 90vh;
     background-position: right -26% bottom 45%;
+    padding: 5rem 0;
 }
 
 .upcoming-products-list .container {
@@ -370,24 +389,25 @@ main {
 .upcoming-products-list .container .font-18px {
     font-weight: 500;
     color: var(--color-grey-1);
+    text-align: center;
 }
 
 .upcoming-products-list ul {
     max-width: 108.5rem;
     height: 50rem;
     padding-top: 4rem;
-    display: inline-flex;
-    align-content: flex-start;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
 }
 
 .upcoming-products-list li {
-    height: 8rem;
+    height: 34rem;
     width: 33.5rem;
-    padding: 0.1rem;
+    padding: 6rem 4rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 2rem;
     cursor: default;
@@ -396,16 +416,12 @@ main {
 }
 
 .upcoming-products-list ul img {
-    height: 3rem;
-    width: 3rem;
+    height: 9rem;
+    width: 9rem;
 }
 
 .checked img {
     filter: var(--color-svg-blue-light);
-}
-
-.unchecked img {
-    filter: var(--color-svg-grey);
 }
 
 .location-map {
@@ -427,14 +443,20 @@ main {
 }
 
 .location-map div > img {
-    filter: invert(57%) sepia(81%) saturate(2202%) hue-rotate(155deg) brightness(95%) contrast(102%);
-    width: 52%;
+    height: 60rem;
+    border-radius: 0.8rem;
 }
 
 .location-map .container > div > div{
     display: inline-flex;
     margin-top: 4rem;
     justify-content: space-between;
+    background-image: url(./img/closeup-shot-black-pin-brazil-country-map.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2rem;
+    padding: 6rem;
 }
 
 .location-map ul {
@@ -451,6 +473,7 @@ main {
 .location-map .font-48px{
     color: var(--color-grey);
     font-weight: 500;
+    text-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.9);
 }
 
 .location-map .font-16px {
