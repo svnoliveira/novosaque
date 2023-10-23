@@ -435,6 +435,11 @@ main {
     align-items: center;
     justify-content: center;
     height: 100%;
+    background-image: url(./img/closeup-shot-black-pin-brazil-country.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right -50px bottom 8p;
+    border-radius: 1rem;
 }
 
 .location-map .container > div {
@@ -451,11 +456,6 @@ main {
     display: inline-flex;
     margin-top: 4rem;
     justify-content: space-between;
-    background-image: url(./img/closeup-shot-black-pin-brazil-country.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 2rem;
     padding: 6rem;
 }
 
@@ -480,6 +480,7 @@ main {
     color: var(--color-blue-light);
     font-weight: 500;
     padding-bottom: 2rem;
+    text-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.9);
 }
 
 .location-map ul h2 {
@@ -490,6 +491,7 @@ main {
 .contact {
     height: 65vh;
     background-color: var(--color-grey-4);
+    padding-top: 6rem;
 }
 
 .contact .container .social {
