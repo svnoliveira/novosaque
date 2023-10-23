@@ -427,6 +427,10 @@ main {
 .location-map {
     background-color: var(--color-grey-4);
     height: 100vh;
+    background-image: url(./img/closeup-shot-black-pin-brazil-country.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right -21px bottom -107px;
 }
 
 .location-map .container {
@@ -435,10 +439,7 @@ main {
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-image: url(./img/closeup-shot-black-pin-brazil-country.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right -50px bottom 8p;
+    
     border-radius: 1rem;
 }
 
@@ -478,9 +479,9 @@ main {
 
 .location-map .font-16px {
     color: var(--color-blue-light);
-    font-weight: 500;
+    font-weight: 700;
     padding-bottom: 2rem;
-    text-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.9);
+    text-shadow: 0 0 0.9rem rgba(255, 255, 255, 0.9);
 }
 
 .location-map ul h2 {
