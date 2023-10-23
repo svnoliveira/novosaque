@@ -92,7 +92,7 @@ a {
 }
 
 .button-orange {
-    background-color: var(--color-blue-light);
+    background-color: var(--color-orange);
     color: var(--color-grey-0);
     min-width: 25rem;
     padding: 1.5rem 0;
@@ -103,7 +103,7 @@ a {
 }
 
 .button-orange:hover {
-    background-color: var(--color-blue-dark);
+    background-color: var(--color-highlight);
 }
 
 /* =============================header=========================== */
@@ -208,7 +208,6 @@ main {
 .home-extra {
     height: 50vh;
     background-image: linear-gradient(to bottom right, #00339B, #00B7EF);
-    margin: 30vh 0;
     position: relative;
 }
 
@@ -243,7 +242,7 @@ main {
 }
 
 .product-showcase > .container > .text-box .font-20px{
-    color: var(--color-blue-light);
+    color: var(--color-orange);
     margin-bottom: 3rem;
     font-weight: 600;
 }
@@ -357,9 +356,9 @@ main {
     margin-top: 20rem;
     margin-bottom: 20rem;
     height: 90vh;
-    background-image: url(./img/close-up-keyboard.jpg);
+    background-image: url(./img/cheerful-young-caucasian-businessman.jpg);
     background-repeat: no-repeat;
-    background-size: 85rem 90vh;
+    background-size: 110rem;
     background-position: right -26% bottom 45%;
     padding: 5rem 0;
 }
@@ -427,10 +426,6 @@ main {
 .location-map {
     background-color: var(--color-grey-4);
     height: 100vh;
-    background-image: url(./img/closeup-shot-black-pin-brazil-country.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right -21px bottom -107px;
 }
 
 .location-map .container {
@@ -439,8 +434,6 @@ main {
     align-items: center;
     justify-content: center;
     height: 100%;
-    
-    border-radius: 1rem;
 }
 
 .location-map .container > div {
@@ -449,20 +442,36 @@ main {
 }
 
 .location-map div > img {
-    height: 60rem;
-    border-radius: 0.8rem;
+    width: 52%;
 }
 
 .location-map .container > div > div{
     display: inline-flex;
     margin-top: 4rem;
     justify-content: space-between;
-    padding: 6rem;
 }
 
 .location-map ul {
     padding-right: 2rem;
     list-style: url(./img/circle.svg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.location-map li {
+    padding: 0.8rem;
+    border: solid 0.1rem var(--color-orange);
+    width: 17.5rem;
+    transition: 0.4s ease-in-out;
+    cursor: default;
+}
+
+.location-map li:hover {
+    border-color: var(--color-highlight);
+    background-color: var(--color-highlight);
 }
 
 .location-map li::marker {
@@ -474,14 +483,12 @@ main {
 .location-map .font-48px{
     color: var(--color-grey);
     font-weight: 500;
-    text-shadow: 0 0 0.9rem rgba(0, 0, 0, 0.9);
 }
 
 .location-map .font-16px {
-    color: var(--color-blue-light);
-    font-weight: 700;
+    color: var(--color-orange);
+    font-weight: 500;
     padding-bottom: 2rem;
-    text-shadow: 0 0 0.9rem rgba(255, 255, 255, 0.9);
 }
 
 .location-map ul h2 {
