@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-svg-blue-light: invert(55%) sepia(95%) saturate(1936%) hue-rotate(155deg) brightness(97%) contrast(101%);
+    --color-svg-blue-dark: invert(17%) sepia(35%) saturate(6082%) hue-rotate(214deg) brightness(87%) contrast(110%);
+    --color-svg-grey: invert(81%) sepia(6%) saturate(131%) hue-rotate(191deg) brightness(90%) contrast(90%);
+	--color-blue-dark: #00339B;
+	--color-blue-light: #00B7EF;
+	--color-highlight: #E0A800;
+	--color-orange: #F58634;
+	--color-grey: #F0F0F0;
+
+	--color-grey-4: #161616;
+	--color-grey-3: #6A6C72;
+	--color-grey-2: #606C78;
+	--color-grey-1: #B6B7BB;
+	--color-grey-0: #F8F9FA;
+	font-size: 62.5%;
+}
+
+.font-56px {
+    font: 5.6rem/5.7rem "Poppins", sans-serif;
+}
+
+.font-48px {
+    font: 4.8rem/4.9rem "Poppins", sans-serif;
+}
+
+.font-44px {
+    font: 4.4rem/4.5rem "Poppins", sans-serif;
+}
+
+.font-40px {
+    font: 4.0rem/4.1rem "Poppins", sans-serif;
+}
+
+.font-25px {
+    font: 2.5rem/3rem "Poppins", sans-serif;
+}
+
+.font-20px {
+    font: 2.0rem "Poppins", sans-serif;
+}
+
+.font-18px {
+    font: 1.8rem "Poppins", sans-serif;
+}
+
+.font-16px {
+    font: 1.6rem "Poppins", sans-serif;
+}
+
+.font-15px {
+    font: 1.5rem "Poppins", sans-serif;
+}
+
+.font-14px {
+    font: 1.4rem "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: var(--color-grey-4);
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 12px 30px 14px 30px;
+    border-radius: 0.4rem;
+    width: fit-content;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin: auto;
+    max-width: 112rem;
+}
+
+.button-orange {
+    background-color: var(--color-blue-light);
+    color: var(--color-grey-0);
+    min-width: 25rem;
+    padding: 1.5rem 0;
+    transition: 0.4s ease-in-out;
+    font: 1.6rem "Poppins", sans-serif;
+    text-align: center;
+    border-radius: 0.4rem;
+}
+
+.button-orange:hover {
+    background-color: var(--color-blue-dark);
+}
+
+/* =============================header=========================== */
+
+header {
+    height: 10rem;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 0 4rem;
+    background-color: var(--color-grey-0);
+}
+
+header > img {
+    width: 18rem;
+    object-fit: contain;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+header nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav > div {
+    display: flex;
+    margin: auto;
+    gap: 4rem;
+}
+
+header > nav > div > .font-15px {
+    color: var(--color-grey-3);
+}
+
+#button-header {
+    color: var(--color-blue-light);
+    border: solid var(--color-blue-light);
+    border-radius: 0.6rem;
+    padding: 1.5rem 4rem;
+    transition: 0.3s ease-in-out;
+}
+
+#button-header:hover {
+    color: var(--color-grey-0);
+    background-color: var(--color-blue-light);
+}
+
+main {
+    background-color: var(--color-blue-dark);
+    height: 130vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--color-grey);
+    width: 100%;
+    max-width: 90.1rem;
+    border-radius: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8rem;
+}
+
+.container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container div input {
+    padding: 2rem;
+    border-radius: 1rem;
+    border: solid 0.1px var(--color-grey-4);
+}
+
+.container .font-18px {
+    font-weight: 600;
+}
+
+.container .font-25px {
+    font-weight: 800;
+}
+
+.container > .font-16px {
+    color: var(--color-grey-3);
+    max-width: 70%;
+    text-align: center;
+}
+
+.container button {
+    align-self: center;
+    height: fit-content;
+}

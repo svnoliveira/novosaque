@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registre-se</title>
+    <title>Seja um Parceiro</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <h1>FORMULARIO</h1>
+    <header>
+        <img src="./img/logo-creditocolor-black.png" alt="Saque Digital logo">
+        <nav>
+            <div>
+                <a href="#top" class="font-15px">Home</a>
+                <a href="" class="font-15px">Solicite um Empréstimo</a>
+            </div>
+            <a href="./index.html" id="button-header" class="font-14px">Voltar á página inicial</a>
+        </nav>
+    </header>
+    <main>
+        <form class="container">
+            <h1 class="font-25px">Faça o seu pré-cadastro e venha ser nosso parceiro?</h1>
+            <p class="font-16px">Ao preencher o formulário um de nossos atendentes entrara em contato para finalizar o seu cadastro.</p>
+            <div>
+                <label for="name" class="font-18px">Nome:</label>
+                <input size="80%" id="name" type="text" placeholder="Digite o seu nome" class="font-15px">
+            </div>
+            <div>
+                <label for="email" class="font-18px">Email:</label>
+                <input size="80%" id="email" type="text" placeholder="Digite o seu email" class="font-15px">
+            </div>
+            <div>
+                <label for="whatsapp" class="font-18px">Whatsapp com DDD:</label>
+                <input size="80%" id="whatsapp" type="text" placeholder="(00) 9 0000-0000" class="font-15px">
+            </div>
+            <div>
+                <label for="city" class="font-18px">Cidade/UF:</label>
+                <input size="80%" id="city" type="text" placeholder="Digite o nome da sua Cidade / UF" class="font-15px">
+            </div>
+            <button type="submit" class="button-orange font-15px">Clique aqui para enviar</button>
+        </form>
+    </main>
 </body>
 </html>
